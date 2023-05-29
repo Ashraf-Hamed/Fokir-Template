@@ -1,0 +1,779 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+.clr {
+    clear: both;
+}
+
+.container {
+    margin: auto;
+    width: 80%;
+}
+
+
+
+.Home {
+    background-image: url("../image/slider-02.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    
+
+}
+.layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #060606da;
+    z-index: 0;
+    
+}
+
+.header {
+    
+    width: 100%;
+    z-index: 999;
+    padding: 16px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-left: 15%;
+    padding-right: 10%;
+    
+}
+
+.header .logo {
+    float: left;
+    width: 25%;
+    font-weight: 800;
+}
+
+.header .logo a {
+    color: #FF305B;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 25px;
+    
+    
+}
+
+.nav {
+  
+    float: right;
+    color: #555555;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 0 15px;
+}
+
+
+.nav ul li {
+    display: inline-block;
+    
+}
+.nav ul li a.active  {
+    color: #FF305B;
+}
+
+.nav ul li a {
+    color: #fff;
+    line-height: 20px;
+    padding: 20px 0;
+    margin-left: 20px;
+}
+
+.home-text {
+    
+    position: absolute;
+    top: 38%;
+    left: 35%;
+    width: 450px;
+}
+
+.home-text h3 {
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+.home-text h1 {
+    color:#FF305B;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 70px;
+    line-height: 77px;
+    margin: 0px 0px 10px;
+    font-weight: 700;
+}
+.home-text .text-box {
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 26px;
+    line-height: 31px;
+    margin: 0px 0px 10px;
+    font-weight: 300;
+    text-align: center;
+    text-transform:capitalize;
+        
+}
+
+
+.fixed-txt {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.animat-txt {
+    display: inline-block;
+    height: 31px;
+    overflow: hidden;
+}
+
+.animat-txt div {
+    animation: 5s txtChange;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(1);
+   
+}
+
+.animat-txt span  {
+    position: relative;
+    color: #FF305B;
+    display: block;
+    text-align: left;
+}
+
+
+.animat-txt span:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    border-left: 2px solid #02095a;
+    right: 0;
+    background-color: #060606f9 ;
+    animation: 3s textType;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(10);
+    animation-fill-mode: backwards;
+}
+
+
+@keyframes textType {
+        0% {
+            left: 0;
+        }
+        50% {
+            left: 100%;
+        }
+        100% {
+            left: 0%;
+        }
+
+        
+}
+
+@keyframes txtChange {
+    0% {
+        margin-top: 0;
+    }
+    33.333% {
+        margin-top: -31;
+    }
+    66.666% {
+        margin-top: -62;
+    }
+    100% {
+        margin-top: 0;
+    }
+}
+
+
+.about {
+   padding: 70px 0 ;
+   text-align: center;
+
+}
+
+.about  .image  {
+   
+    float: left;
+    width: 50%;
+    position: relative;
+   
+}
+
+.about .image img {
+    border-radius: 8px;
+    height: auto;
+}
+
+
+
+
+.image .border {
+    border: 8px solid #555555;
+    border-radius: 8px;
+    width: 350px;
+    height: 100%;
+    bottom: 25px;
+    left: 16%;
+    position: absolute;
+    z-index: -1;
+}
+
+
+.about-info {
+    margin-bottom: 25px;
+}
+
+.info {
+   
+    float: right;
+    width: 50%;
+    text-align: left;
+    
+}
+
+
+.info h2 {
+    color: #222222;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 34px;
+    line-height: 22px;
+    margin:  0 0 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2;
+
+}
+
+.info h2 span {
+    margin-right: 8px;
+    color: #FF305B;
+}
+
+
+.info p {
+    border-bottom: 1px #222222 dashed;
+    margin-bottom: 25px;
+    padding-bottom: 25px ;
+    color: #555555;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    margin: 0 0 25px;
+
+}
+
+
+.info ul  li {
+    float: left;
+    width: 50%;
+    color: #555555;
+    line-height: 1;
+    margin-bottom: 25px;
+
+}
+
+.info ul  li span {
+    color: #333;
+    font-weight: bolder;
+}
+
+.btns-Cv a {
+    color : #fff;
+    background-color: #FF305B;
+    line-height: 24px ;
+    padding: 13px 24px;
+    font-size: 17px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    margin-right: 15px;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.3s ease;
+    
+}
+
+.btns-Cv a:hover {
+    background-color: RGB(236, 36, 3);
+}
+
+
+.btns-Cv a i {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+
+
+.our-services , .Our-Portfolio{
+    background-color: RGB(241, 241, 241);
+    padding: 25px 20px;
+    text-align: center;
+    padding: 100px 0 54px;
+    
+}
+
+
+
+
+.our-services h2  ,
+ .Our-Portfolio h2 ,
+  .feedback h2 ,
+  .blog h2 ,
+  .contact h2 {
+    color:  #333;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 40px;
+    line-height: 30px;
+    margin: 0 0 40px ;
+    padding: 0 0 30px;
+    font-weight: 800;
+    text-transform: capitalize;
+    position: relative;
+   
+   
+     
+    
+
+}
+
+.our-services h2::before  , 
+.Our-Portfolio h2::before ,
+.feedback h2::before ,
+.blog h2::before ,
+.contact h2::before{
+content: "";
+position: absolute;
+width: 150px;
+height: 1px;
+background-color: red;
+bottom: 0;
+left: 45%;
+}
+
+
+
+
+.our-services .card {
+    
+    float: left;
+    width: 25%;
+    padding: 40px 15px;
+}
+
+.our-services .card i {
+    color: #FF305B;
+    font-size: 30px;
+    line-height: 36px;
+    margin: 0 0 20px;
+    text-align: center;
+}
+
+.our-services .card h3 {
+    color: #333;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 24px;
+    line-height: 26px;
+    margin: 0  0 15px;
+    font-weight: 600;
+
+}
+
+.our-services .card p {
+    color: #555;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+
+}
+
+
+.Our-Portfolio  {
+    background-color: #fff;
+}
+
+.Our-Portfolio .menu {
+    margin-bottom: 30px;
+}
+.Our-Portfolio .menu ul li {
+    display: inline-block;
+    margin-right: 18px;
+}
+
+.Our-Portfolio .menu ul li a {
+    color: black ;
+    padding: 3px 12px ;
+    line-height: 25px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+
+
+}
+
+.Our-Portfolio .menu ul li a:hover {
+    color: #FF305B;
+}
+
+.Our-Portfolio .menu ul li a.active {
+    color: #FF305B;
+}
+
+
+.Our-Portfolio .item {
+    float: left;
+    width: 33.33%;
+    
+}
+
+.Our-Portfolio .item img {
+    max-width: 100%;
+    height: auto;
+    padding: 15px;
+}
+
+
+
+
+.dashboard {
+    background-color: #F1F1F1;
+    font-family: 'Roboto', sans-serif;
+    line-height: 25px;
+    padding: 100px 0;
+
+}
+
+.dashboard .box {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+
+.dashboard .box i {
+    color: #FF305B;
+    font-size: 26px;
+    line-height: 26px;
+    margin: 0  0 15px;
+
+}
+
+
+.dashboard .box h3 {
+    color: #333;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 26px;
+    line-height: 28px;
+    margin: 0  0 10px;
+    font-weight: 800;
+
+}
+.dashboard .box h5 {
+    color: #555;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 17px;
+    font-weight: 600;
+
+}
+
+
+.feedback {
+    text-align: center;
+    padding: 100px 0;
+    line-height: 25px;
+
+   
+}
+.feedback h2 {
+font-weight: 800;
+}
+
+
+.feedback .container {
+    width: 55%;
+    margin: auto;
+}
+
+.feedback .card {
+ background-color: #f1f1f1;
+ font-family: 'Roboto', sans-serif;
+ line-height: 25px;
+ padding: 40px;
+ border-radius: 5px;
+
+
+
+}
+
+.feedback .card .image {
+    float: left;
+    width: 25%;
+    width: 120px;
+  
+    
+    
+}
+
+.feedback .card .image img {
+    border-radius: 50%;
+    width: 100%;
+
+}
+
+
+
+
+.feedback .card .txt {
+    float: right;
+    width: 80%;
+    text-align: left;
+}
+
+
+.feedback .card .txt h3 {
+    color: #333;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 26px;
+    line-height: 28px;
+    margin: 0  0 10px;
+    font-weight: 600;
+}
+
+.feedback .card .txt a  {
+    color: #777;
+    font-size: 15px;
+    line-height: 16px;
+    font-weight: 600;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+.feedback .card .txt a  i {
+    margin-right: 3px;
+}
+
+.feedback .card .txt p {
+    color: #777;
+    line-height: 25px;
+    margin: 0 0 15px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.feedback .card .txt .rate {
+    color: #F1C30D;
+    font-family: 'Roboto', sans-serif;
+    line-height: 25px;
+    margin: 0 0 12px;
+
+}
+
+
+
+
+.blog {
+    text-align: center;
+    background-color: #f1f1f1;
+    font-family: 'Roboto', sans-serif;
+    line-height: 25px;
+    padding: 100px 0 70px;
+
+}
+
+.blog .card {
+    float: left;
+    width: 33.33%;
+    text-align: left;
+    
+    font-family: 'Roboto', sans-serif;
+    line-height: 25px;
+    padding: 0 15px;
+
+
+    
+    
+    
+}
+
+ .inner {
+    background-color: #fff;
+    padding-bottom: 10px;
+    
+}
+
+
+.blog .card img {
+    width: 100%;
+}
+
+
+
+
+.blog .card .date {
+    color: #555;
+    line-height: 25px;
+    margin: 0 0 10px;
+    font-family: 'Roboto', sans-serif;
+    padding: 6px 15px;
+}
+
+.blog .card h3 {
+    color: #000;
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 600;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 0  15px;
+}
+
+.blog .card p {
+    color: #555;
+    line-height: 25px;
+    margin: 0 0 15px;
+    font-family: 'Roboto', sans-serif;
+    padding: 8px 15px;
+}
+
+.blog .card  a {
+    color: #FF305B;
+    line-height: 25px;
+    font-family: 'Roboto', sans-serif;
+    padding: 25px 15px;  
+    text-transform: capitalize;
+
+}
+
+.blog .card  a i {
+    margin-left: 7px;
+    vertical-align: middle;
+}
+
+
+.contact  {
+        padding: 100px 0;
+        font-family: 'Roboto', sans-serif;
+
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 40px;
+    line-height: 30px;
+    margin: 0 0 40px;
+    padding: 0 0 30px;
+    font-weight: 800;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+.contact form {
+    width: 70%;
+    margin: 15px auto;
+    outline: none;
+    border: none;
+}
+
+.contact  .Name  {
+    width: 47%; 
+    float: left; 
+}
+
+.contact .Email {
+    float: right;
+    width: 47%;
+}
+
+
+input , textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    outline: none;
+    color: #000;
+    border: none;
+    border:  1px solid #ccc;
+    resize: vertical;
+}
+
+
+
+.contact button {
+    width: fit-content;
+    margin-top: 1rem;
+    cursor: pointer;
+    padding: 2px 18px;
+    background: #FF305B;
+    color: #fff;
+    font-size: 14px;
+    line-height: 38px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 6px;
+    transition: 0.3s ease;
+
+}
+
+
+.contact button:hover {
+    background-color:  RGB(236, 36, 3);;
+}
+.footer {
+    background-color: #333;
+    line-height: 25px ;
+    padding: 50px 0px ; 
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+
+}
+
+.footer i {
+    line-height: 25px;
+    color: #fff;
+     margin:  0 10px 10px  ;
+     cursor: pointer;
+    
+}
+
+
+.footer i:hover {
+    color: #FF305B;
+}
+.footer p {
+    color: #fff;
+    line-height: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+     
+}
+
+
+.footer span {
+    color: #FF305B;
+    font-weight: bold;
+   
+}
